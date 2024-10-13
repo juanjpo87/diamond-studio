@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /index-ca.html
+Allow: /index-en.html
+Allow: /index-fr.html
+
+Sitemap: https://diamondstudiomanicura.com/sitemap.xml

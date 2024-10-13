@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Diamond Studio by Inés Pinto - Centre de manucure à Andorre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/jpg" href="logo.jpg"/>
+	<link rel="canonical" href="https://diamondstudiomanicura.com/">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Meta Description -->
+    <meta name="description" content="Diamond Studio by Inés Pinto est votre salon de manucure à Andorre. Nous offrons des services de manucure, pédicure et nail art de haute qualité. Réservez votre rendez-vous et profitez d'ongles impeccables dans une ambiance relaxante.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="manucure, pédicure, nail art, salon de manucure, Andorre, soin des ongles, salon de beauté, ongles décorés, beauté, esthétique">
+
+	<!-- IMPORTACION DE FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+	<!-- ESTILOS DEL TEMPLATE -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/aos.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
+	<!-- ESTILOS PARA EL DATEPICKER -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css"> -->
+
+    
+    <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style copy.css">
+
+	<!-- ESTILOS CUSTOM -->
+	<link rel="stylesheet" href="css/santi.css">
+	<link rel="stylesheet" href="css/offcanvas.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+
+
+	<!-- IMPORTACION DE SCRIPT PARA QUE FUNCIONE EL OFFCANVAS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>	
+  </head>
+  <body>
+	
+	<!-- INICIO NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<div class="row align-items-end">
+				<a class='navbar-brand col-12' href='#'>Diamond Studio</a>
+				<a class='navbar-brand navbar-brand-sub col-12' href='#'>by Inés Pinto</a>
+			</div>
+			<!-- Botón del menú para mobile -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuContent" aria-controls="menuContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<!-- Menú principal -->
+			<div class="collapse navbar-collapse order-2 order-lg-1" id="menuContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+					<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="#creaciones">Créations</a></li>
+					<li class="nav-item"><a class="nav-link" href="#tarifas">Tarifs</a></li>
+					<li class="nav-item"><a class="nav-link" href="#giftcard">Giftcard</a></li>
+					<li class="nav-item"><a class="nav-link" href="#equipo">Équipe</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Ícono del idioma con menú colapsado -->
+			<div class="dropdown d-lg-block ml-lg-3 order-1 order-lg-2">
+				<a class="nav-link" href="#" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="bi bi-globe"></i>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+					<a class="dropdown-item" href="index-ca.html">Català</a>
+					<a class="dropdown-item" href="index.html">Español</a>
+					<a class="dropdown-item" href="index-en.html">English</a>
+					<a class="dropdown-item" href="index-fr.html">Français</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Script para cerrar el menú después de seleccionar una opción en Mobile -->
+	<script>
+		document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+			link.addEventListener('click', function() {
+				const menu = document.querySelector('.navbar-collapse');
+				if (menu.classList.contains('show')) {
+					menu.classList.remove('show');
+				}
+			});
+		});
+
+		// Cierra el menú si se hace clic fuera de él en dispositivos móviles
+		document.addEventListener('click', function(event) {
+			const clickInsideMenu = document.querySelector('#menuContent').contains(event.target);
+			const isTogglerButton = document.querySelector('.navbar-toggler').contains(event.target);
+			
+			if (!clickInsideMenu && !isTogglerButton) {
+				const menu = document.querySelector('.navbar-collapse');
+				if (menu.classList.contains('show')) {
+					menu.classList.remove('show');
+				}
+			}
+		});
+	</script>
+
+	<!-- FIN NAVBAR -->
+
+
+
+	<!-- INICIO SLIDE PRINCIPAL -->
+    <div class="hero-wrap js-fullheight" style="background: url('images/portada.jpg') no-repeat center center;background-size: cover; background-position: 0px 250px;" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+		  <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+			<div class="col-md-8 ftco-animate text-center align-middle" data-scrollax=" properties: { translateY: '70%' }">
+				<div class="icon">
+					<a href="" class="logo">
+						
+						<img src="images/LogoBlanco.png" width="300" height="300" fill="currentColor" class="">
+						<h1>Diamond Studio</h1>
+					</a>
+				</div>
+			  <p class="mb-5 shadow-text" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">By Inés Pinto</p>
+  
+			  <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://wa.me/376687310?text=Bonjour,%20je%20voudrais%20prendre%20rendez-vous%20avec%20Inés." target="_blank" class="btn btn-white btn-outline-white px-4 py-3">Réservez votre rendez-vous</a></p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- FIN SLIDE PRINCIPAL -->
+
+	<!-- INICIO SECCION SERVICIOS -->
+    <section class="ftco-section bg-light" id="services">
+		<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Services</h2>
+          </div>
+        </div>
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+			  <div class="rounded mx-auto d-block"><img src="images/manicure.png" width="40" height="40" fill="currentColor"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Manucure</h3>
+                <p>Service de manucure professionnel au centre d’Andorre-la-Vieille. Nous offrons un soin complet pour vos mains et ongles. Inclut nettoyage, coupe, limage et application de vernis avec des modèles personnalisés. Idéal pour maintenir vos ongles en bonne santé et avec un aspect impeccable.</p>
+				<p>Profitez d’une expérience relaxante avec les meilleurs résultats.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+				<div class="rounded mx-auto d-block"><img src="images/pedicure.png" width="40" height="40" fill="currentColor"></span></div>
+				<div class="media-body">
+                <h3 class="heading">Pédicure</h3>
+                <p>La pédicure complète inclut trempage, exfoliation, élimination des callosités, coupe, limage des ongles et application de vernis. Parfait pour maintenir vos pieds doux, sains et avec un aspect renouvelé.</p>
+				<p>Profitez d’une expérience relaxante qui rendra vos pieds impeccables.</p>
+              </div>
+            </div>      
+          </div>
+		  <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+				<div class="rounded mx-auto d-block"><img src="images/nailart-icon.png" width="40" height="40"  fill="currentColor"></span></div>
+				<div class="media-body">
+                <h3 class="heading">Nail Art</h3>
+                <p>Le Nail Art personnalisé est un service exclusif qui transforme vos ongles en véritables œuvres d’art. Nous proposons une large variété de modèles, allant des plus minimalistes aux plus créatifs et élaborés, utilisant des techniques avancées et des produits de haute qualité.</p>
+				<p>Idéal pour ceux qui souhaitent exprimer leur style et leur créativité à travers des ongles uniques et originaux.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+    	</div>
+    </section>
+	<!-- FIN SECCION SERVICIOS -->
+
+	<!-- INICIO SECCION NAILS ART -->
+	 	<!-- INICIO TEXTOS MOBILE VERSION -->
+		<div class="d-md-none">
+			<div class="heading-section text-center ftco-animate fadeInUp ftco-animated">
+				<h2 class="mb-4 allison-regular">Nail Art</h2>
+				<p class="mb-4">Je vous souhaite la bienvenue dans ma galerie de nail art. Vous y trouverez une variété de styles, des plus élégants et minimalistes aux plus audacieux et colorés. Aimez-vous les personnages Disney ? Nous avons des designs inspirés de Mickey Mouse, Minnie Mouse, Ariel et bien d’autres. De plus, vous trouverez également des Pokémons comme Pikachu, Gengar et d’autres. J’espère que vous trouverez l’inspiration pour vos prochaines manucures ! 💅🎨✨
+					</p>
+				<p class="mb-4">* Il est recommandé de demander un devis séparé, car le prix dépend du modèle que vous choisissez et est lié au temps et à l’effort de la manucure. *</p>
+
+				<p><a href="https://wa.me/376687310?text=Bonjour,%20je%20voudrais%20des%20informations%20sur%20le%20Nail%20Art." target="_blank" class="btn btn-white btn-outline-black px-4 py-3">Consulter le prix</a></p>
+			</div>
+		</div>
+		<!-- FIN TEXTOS MOBILE VERSION -->
+		<!-- INICIO DESKTOP VERSION -->
+		<div id="carouselExampleControls" class="carousel slide col-md-12 ftco-animate" data-ride="carousel">
+			<div class="carousel-inner rounded">
+				<div class="row">
+					<div class="carousel-caption d-none d-md-block">
+							<div class="row justify-content-center">
+								<div class="discount ftco-animate">
+									<h2 class="mb-4 allison-regular ">Nail Art</h2>
+									<p class="mb-4 shadow-text">Je vous souhaite la bienvenue dans ma galerie de nail art. Vous y trouverez une variété de styles, des plus élégants et minimalistes aux plus audacieux et colorés. Aimez-vous les personnages Disney ? Nous avons des designs inspirés de Mickey Mouse, Minnie Mouse, Ariel et bien d’autres. De plus, vous trouverez également des Pokémons comme Pikachu, Gengar et d’autres. J’espère que vous trouverez l’inspiration pour vos prochaines manucures ! 💅🎨✨</p>
+									<p class="mb-4 shadow-text">* Il est recommandé de demander un devis séparé, car le prix dépend du modèle que vous choisissez et est lié au temps et à l’effort de la manucure. *</p>
+									<p><a href="https://wa.me/376687310?text=Bonjour,%20je%20voudrais%20des%20informations%20sur%20le%20Nail%20Art." target="_blank" class="btn btn-white btn-outline-black px-4 py-3">Consulter le prix</a></p>
+								</div>
+							</div>
+					</div>
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="images/naranja.jpg" alt="Nail Art">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/bolas.jpg" alt="Nail Art">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/palta.jpg" alt="Nail Art">
+			</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
+				</div>
+			</div>
+		</DIV>
+		<!-- FIN DESKTOP VERSION -->
+	<!-- FIN SECCION NAILS ART -->
+
+	<!-- GALERIA INSTAGRAM -->
+
+	<section class="ftco-section bg-light" id="creaciones">
+		<div class="container">
+			<div class="row justify-content-center mb-1 pb-1">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-1">Mes créations</h2>
+					<p>Ici, je partage mes créations les plus récentes et originales. Des modèles classiques aux propositions uniques, chaque manucure est une œuvre d’art en miniature. Explorez et trouvez des idées pour vos propres ongles. La créativité n’a pas de limites ! 💅🌟</p>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-container">
+			<div class="row justify-content-center mb-3 pb-5">
+				<button class="galeria-control-prev" id="prevBtn">&lt; Précédent</button>
+				<button class="galeria-control-next" id="nextBtn">Suivant &gt;</button>
+			</div>
+			<div class="carousel-slide">
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C9cVhQ4NS4-/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C9cVhQ4NS4-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C9cVhQ4NS4-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote>
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C3f_5Yxt1eG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C3f_5Yxt1eG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C4BVBJ7tfh5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+						<div style="padding:16px;"> <a href="https://www.instagram.com/p/C4BVBJ7tfh5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C6JNUmDtkwd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C6JNUmDtkwd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C7ZutwCN_OT/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C7ZutwCN_OT/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C0rmlZMtA_d/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C0rmlZMtA_d/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C0hStIIt6H2/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C0hStIIt6H2/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+					<div class="carousel-image galeria-item">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C3nwS_SNn98/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+							<div style="padding:16px;"> <a href="https://www.instagram.com/p/C3nwS_SNn98/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C6CDrPAtGM-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de 𝓓𝓲𝓪𝓶𝓸𝓷𝓭 𝓝𝓐𝓘𝓛𝓢 𝓑𝔂 𝓘𝓷ê𝓼 𝓟𝓲𝓷𝓽𝓸💎 (@diamond_studio_and)</a></p></div></blockquote> 
+						<script async src="//www.instagram.com/embed.js"></script>
+					</div>
+			</div>
+		</div>
+		</section>
+
+		<script>
+			const slide = document.querySelector('.carousel-slide');
+			const images = document.querySelectorAll('.carousel-image');
+			const prevBtn = document.getElementById('prevBtn');
+			const nextBtn = document.getElementById('nextBtn');
+
+			let counter = 0;
+			let imageWidth = images[0].clientWidth;
+
+			window.addEventListener('resize', () => {
+				imageWidth = images[0].clientWidth;
+				slide.style.transform = `translateX(${-imageWidth * counter}px)`;
+			});
+
+			nextBtn.addEventListener('click', () => {
+				if (counter >= images.length - (window.innerWidth >= 750 ? 3 : 1)) return;
+				slide.style.transition = "transform 0.5s ease-in-out";
+				counter++;
+				slide.style.transform = `translateX(${-imageWidth * counter}px)`;
+			});
+
+			prevBtn.addEventListener('click', () => {
+				if (counter <= 0) return;
+				slide.style.transition = "transform 0.5s ease-in-out";
+				counter--;
+				slide.style.transform = `translateX(${-imageWidth * counter}px)`;
+			});
+		</script> 
+
+		<!-- GALERIA INSTAGRAM -->
+	
+	<!-- INICIO SECCION MARCAS -->
+    <section class="ftco-partner bg-light">
+    	<div class="container">
+
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				  <h2 class="mb-4">Nos Marques</h2>
+				  <p>Dans notre centre de manucure, nous sommes fiers de travailler avec les principales marques de l’industrie pour garantir la meilleure qualité dans chaque service. Nous utilisons des produits reconnus et de haute gamme qui assurent durabilité, sécurité et meilleurs résultats pour vos ongles.</p>
+				  <p>Votre satisfaction et votre confiance sont notre priorité, c’est pourquoi nous utilisons uniquement des marques leaders qui répondent aux normes les plus élevées de beauté et de soin.</p>
+				</div>
+			  </div>
+    		<div class="row partner justify-content-center">
+    			<div class="col-md-10">
+    				<div class="row">
+		        	<div class="col-md-3 ftco-animate p-3">
+		        		<a href="https://www.universenails.com/es/" target="_blank" class="partner-entry">
+		        			<img src="images/marca_universalnails.jpg" fill="currentColor" class="img-fluid" alt="Universal Nails">
+		        		</a>
+		        	</div>
+		        	<div class="col-md-3 ftco-animate p-3">
+		        		<a href="https://jimenanails.com/" target="_blank" class="partner-entry">
+		        			<img src="images/marca_jimenanails.jpg" fill="currentColor" class="img-fluid" alt="Jimena Nails">
+		        		</a>
+		        	</div>
+		        	<div class="col-md-3 ftco-animate p-3">
+		        		<a href="https://andreiaprofessional.com/" target="_blank" class="partner-entry">
+		        			<img src="images/marca_andreia.png" fill="currentColor"  class="img-fluid" alt="Andreia Professional">
+		        		</a>
+		        	</div>
+		        	<div class="col-md-3 ftco-animate p-3">
+		        		<a href="https://www.indigo-nails.es/" target="_blank" class="partner-entry">
+		        			<img src="images/marca_indigo.png" fill="currentColor"  class="img-fluid" alt="Indigo Nails Lab">
+		        		</a>
+		        	</div>
+	        	</div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+	
+	<!-- FIN SECCION MARCAS -->
+
+	<!-- INICIO SECCION TARIFAS -->
+	<section class="ftco-section" id="tarifas">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Tarifs</h2>
+			  <p>Consultez nos tarifs et découvrez la large gamme de services de manucure que nous proposons. Des traitements de base aux options premium, tous conçus pour répondre à vos besoins.  </p>
+			  <p>Nous offrons des prix compétitifs et transparents, garantissant toujours le meilleur rapport qualité-prix.</p>
+			  <p>Choisissez le service parfait pour vous et profitez d’ongles impeccables !</p>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-6 ftco-animate">
+			  <div class="pricing-entry pb-5 text-center">
+				<div>
+				  <h3 class="mb-4">Manucure</h3>
+				</div>
+				<ul>
+				  <li>Traditionnelle (Nettoyage en profondeur + Repair complex) 12€</li>
+				  <li>Spa Manucure 5€</li>
+				  <li>Semi-permanent 18€</li>
+				  <li>Semi-permanent + Renfort 25€</li>
+				  <li>Acrygel 45€</li>
+				  <li>Acrygel M/L 50€</li>
+				  <li>Acrygel XL 57€</li>
+				  <li>Acryl 45€</li>
+				  <li>Acryl M/L 50€</li>
+				  <li>Acryl XL 57€</li>
+				  <li>Modèle a la française 2€</li>
+				  <li>Paillettes 1,50€</li>
+				</ul>
+				<p class="button text-center">
+				  <a href="https://wa.me/376687310?text=Bonjour,%20je%20voudrais%20prendre%20rendez-vous%20avec%20Inés." target="_blank" class="btn btn-primary btn-outline-primary px-4 py-3">Réservez votre rendez-vous</a>
+				</p>
+			  </div>
+			</div>
+			<div class="col-md-6 ftco-animate">
+			  <div class="pricing-entry pb-5 text-center">
+				<div>
+				  <h3 class="mb-4">Retouches</h3>
+				</div>
+				<ul>
+				  <li>Acrygel 35€</li>
+				  <li>Gel 35€</li>
+				  <li>Acryl 35€</li>
+				</ul>
+				<div>
+				  <h3 class="mb-4">Pédicure</h3>
+				</div>
+				<ul>
+				  <li>Traditionnelle (sans vernis) 25€</li>
+				  <li>Traditionnelle (avec vernis) 30€</li>
+				  <li>VIP 35€</li>
+				  <li>Traitement à la paraffine 5€</li>
+				</ul>
+				<div>
+				  <h3 class="mb-4">Retrait</h3>
+				</div>
+				<ul>
+				  <li>Semi-permanent  5€</li>
+				  <li>Acryl / Gel / Acrygel 12€</li>
+				</ul>
+				<p class="button text-center">
+				  <a href="https://wa.me/376687310?text=Bonjour,%20je%20voudrais%20prendre%20rendez-vous%20avec%20Inés." target="_blank" class="btn btn-primary btn-outline-primary px-4 py-3">Réservez votre rendez-vous</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <!-- FIN SECCION TARIFAS -->
+
+	  <!-- INICIO SECCION GIFTCARD -->
+	  <!-- <section class="ftco-section ftco-discount img" style="background: linear-gradient(to right,rgb(251, 179, 211,0.1), rgb(251, 179, 211,0.5)), url('images/unas.jpg') no-repeat center center;background-size: cover;" id="giftcard"> -->
+	  <section class="ftco-section ftco-discount img" style="background: linear-gradient(to right,rgb(0,0,0,0.1), rgb(0,0,0,0.5)), url('images/DSGiftCard03.jpg') no-repeat center center;background-size: cover; " id="giftcard">
+	    <div class="overlay"></div>
+	    <div class="container">
+	      <div class="row justify-content-end">
+	        <div class="col-md-6 discount ftco-animate">
+	          <h3>Offrir Diamond</h3>
+	          <h2 class="mb-4">Diamond GIFT CARD</h2>
+	          <p class="mb-4">La Diamond GiftCard est le cadeau parfait pour surprendre quelqu’un de spécial. Cette carte cadeau de notre centre de manucure offre un accès à une expérience de beauté exclusive, avec des services de manucure de haute qualité. Personnalisable et valable pendant 3 mois, elle est idéale pour toute occasion. Offrez un moment de luxe et de soin avec la Diamond GiftCard.</p>
+	          <p>
+	            <a href="https://wa.me/376687310?text=Bonjour,%20je%20voudrais%20des%20informations%20sur%20la%20carte%20cadeau." target="_blank" class="btn btn-white btn-outline-white px-4 py-3">JE VEUX UNE CARTE CADEAU</a>
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	  <!-- FIN SECCION GIFTCARD -->
+ 
+	<!-- INICIO OFFCANVAS CV INES PINTO -->
+	<div class="offcanvas offcanvas-end" id="cvInes">
+		<div class="offcanvas-header">
+		  <h1 class="offcanvas-title">Inés Pinto</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+		  <div class="staff-big">
+			<div class="img mb-4" style="background-image: url(images/person_1.jpg); background-position: 60% 50%;"></div>
+			<div class="info text-center">
+			  <h3>
+				<span class="position">Manucure - Propriétaire</span>
+			  </h3>
+			  <!-- <span class="position">Manicurista</span> -->
+			  <div class="text">
+				<p>Bonjour ! Je suis Inés, fondatrice passionnée de Diamond Studio. À 22 ans et avec une formation en nail art, je m’engage à créer de véritables œuvres d’art sur les ongles. Mon expérience couvre tous types de matériaux et structures, et mon objectif est de rendre chaque manucure unique et spéciale. Bienvenue dans mon monde coloré et créatif ! 💅🎨✨</p>
+				<span class="position">Mes Certifications:</span>
+				<div class="pb-5">
+					<div class="bd-example">
+						<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+							<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+							<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+							<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/certificado02.jpg" class="d-block w-100" alt="Certificat Ines Pinto">
+							  <div class="carousel-caption d-none d-md-block">
+								<!-- <h5>CERTIFICADO</h5> -->
+								<!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+							  </div>
+							</div>
+							<div class="carousel-item">
+							  <img src="images/certificado03.jpg" class="d-block w-100" alt="Certificat Ines Pinto">
+							  <div class="carousel-caption d-none d-md-block">
+								<!-- <h5>CERTIFICADO</h5> -->
+								<!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+							  </div>
+							</div>
+							<div class="carousel-item">
+								<img src="images/certificado04.jpg" class="d-block w-100" alt="Certificat Ines Pinto">
+								<div class="carousel-caption d-none d-md-block">
+								  <!-- <h5>CERTIFICADO</h5> -->
+								  <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+								</div>
+							  </div>
+							<div class="carousel-item">
+								<img src="images/certificado05.jpg" class="d-block w-100" alt="Certificat Ines Pinto">
+								<div class="carousel-caption d-none d-md-block">
+								  <!-- <h5>CERTIFICADO</h5> -->
+								  <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+								</div>
+							  </div>
+							  <div class="carousel-item">
+								<img src="images/certificado06.jpg" class="d-block w-100" alt="Certificat Ines Pinto">
+								<div class="carousel-caption d-none d-md-block">
+								  <!-- <h5>CERTIFICADO</h5> -->
+								  <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+								</div>
+							  </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Anterior</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente</span>
+						  </a>
+						</div>
+					  </div>
+				</div>
+				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cvInes"> Fermer </button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- FIN OFFCANVAS CV INES PINTO -->
+	  
+	  <!-- INICIO OFFCANVAS CV ALEX CAMPANTE -->
+	  <div class="offcanvas offcanvas-end" id="cvAlex">
+		<div class="offcanvas-header">
+		  <h1 class="offcanvas-title">Alex Campante</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+		  <div class="staff-big">
+			<div class="img mb-4" style="background-image: url(images/person_2.jpg); background-position: 50% 10%;"></div>
+			<div class="info text-center">
+			  <h3>
+				<span class="position">Community Manager</span>
+			  </h3>
+			  <!-- <span class="position">Manicurista</span> -->
+			  <div class="text">
+				<p>Alex est notre expert en ventes, organisation d'événements et gestion des médias sociaux. Avec sa passion pour la créativité et la stratégie, elle veille à ce que notre présence sur les réseaux sociaux soit efficace.</p>
+				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cvAlex"> Fermer </button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- FIN OFFCANVAS CV ALEX CAMPANTE -->
+
+	  <!-- INICIO SECCION EQUIPO -->
+	  <section class="ftco-section bg-light" id="equipo">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section ftco-animate text-center">
+			  <h2 class="mb-2">Notre équipe</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-lg-6 d-flex mb-sm-6 ftco-animate">
+			  <div class="staff">
+				<div class="img mb-4" style="background-image: url(images/person_1.jpg); background-position: 53% 5%; background-size: 400%"></div>
+				<div class="info text-center">
+				  <h3>
+					<a href="teacher-single.html">Inés Pinto</a>
+				  </h3>
+				  <span class="position">Manucure - Propriétaire</span>
+				  <div class="text">
+					<p>Bonjour ! Je suis Inés, fondatrice passionnée de Diamond Studio. À 22 ans et avec une formation en nail art, je m’engage à créer de véritables œuvres d’art sur les ongles. Mon expérience couvre tous types de matériaux et structures, et mon objectif est de rendre chaque manucure unique et spéciale. Bienvenue dans mon monde coloré et créatif ! 💅🎨✨</p>
+					<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cvInes"> Plus d'infos sur Inés</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-lg-6 d-flex mb-sm-6 ftco-animate">
+			  <div class="staff">
+				<div class="img mb-4" style="background-image: url(images/person_2.jpg); background-position: 40% 5%; background-size:150%"></div>
+				<div class="info text-center">
+				  <h3>
+					<a href="teacher-single.html">Alex Campante</a>
+				  </h3>
+				  <span class="position">Community Manager</span>
+				  <div class="text">
+					<p>Alex est notre expert en ventes, organisation d'événements et gestion des médias sociaux. Avec sa passion pour la créativité et la stratégie, elle veille à ce que notre présence sur les réseaux sociaux soit efficace.</p>
+					<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cvAlex"> Plus d'infos sur Alex</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </section>
+	  <!-- FIN SECCION EQUIPO -->
+
+
+		<!-- <section class="ftco-section ftco-appointment" id="appointment">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row d-md-flex align-items-center">
+    			<div class="col-md-2"></div>
+	    		<div class="col-md-4 d-flex align-self-stretch ftco-animate">
+	    			<div class="appointment-info text-center p-5">
+	    				<div class="mb-4">
+	    					<h3 class="mb-3">Address</h3>
+		    				<p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
+	    				</div>
+	    				<div class="mb-4">
+		    				<h3 class="mb-3">Phone</h3>
+		    				<p class="day"><strong>000 123 456</strong> or <strong>000 987 654</strong></p>
+	    				</div>
+	    				<div>
+		    				<h3 class="mb-3">Opening Hours</h3>
+		    				<p class="day"><strong>Monday - Friday</strong></p>
+		    				<span>08:00am - 09:00pm</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-6 appointment pl-md-5 ftco-animate">
+	    			<h3 class="mb-3">Appointments</h3>
+	    			<form action="#" class="appointment-form">
+	            <div class="row form-group d-flex">
+	            	<div class="col-md-6">
+	            		<input type="text" class="form-control" placeholder="First Name">
+	            	</div>
+	            	<div class="col-md-6">
+	            		<input type="text" class="form-control" placeholder="Last Name">
+	            	</div>
+	            </div>
+	            <div class="row form-group d-flex">
+	            	<div class="col-md-6">
+	            		<div class="input-wrap">
+		            		<div class="icon"><span class="ion-md-calendar"></span></div>
+		            		<input type="text" id="appointment_date" class="form-control" placeholder="Date">
+	            		</div>
+	            	</div>
+	            	<div class="col-md-6">
+	            		<input type="text" class="form-control" placeholder="Phone">
+	            	</div>
+	            </div>
+	            <div class="form-group">
+	              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+	            </div>
+	            <div class="form-group">
+	              <input type="submit" value="Order" class="btn btn-white btn-outline-white py-3 px-4">
+	            </div>
+	          </form>
+	    		</div>    			
+    		</div>
+    	</div>
+    </section> -->
+
+	<!-- <section> -->
+
+		<!-- Calendly inline widget begin -->
+		<!-- <div class="calendly-inline-widget" data-url="https://calendly.com/sbticprova/30min?primary_color=fa5bdd" style="min-width:320px;height:700px;"></div>
+		<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+		<!-- Calendly inline widget end -->	
+<!-- 
+	</section> -->
+
+	<!-- INICIO FOOTER -->
+    <footer class="ftco-footer ftco-section img logo-background" id="contacto" >
+    	<div class="overlay" ></div>
+      <div class="container " >
+        <div class="row mb-5">
+
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Diamond Studio</h2>
+              <ul class="list-unstyled">
+                <li><a href="#services" class="py-2 d-block">Services</a></li>
+                <li><a href="#creaciones" class="py-2 d-block">Créations</a></li>
+                <li><a href="#tarifas" class="py-2 d-block">Tarifs</a></li>
+				<li><a href="#giftcard" class="py-2 d-block">Giftcard</a></li>
+				<li><a href="#equipo" class="py-2 d-block">Équipe</a></li>
+                <li><a href="#Contacto" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contactez-nous</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Carrer Roc dels Escolls, 8, local 2, AD500 Andorra la Vella</span></li>
+	                <li><span class="icon icon-phone"></span><span class="text">+376 687 310</span></li>
+					<li>
+						<a href="mailto:info@diamondstudiomanicura.com?subject=Contacto%20desde%20la%20web">
+						  <span class="icon icon-envelope"></span>
+						  <span class="text">info@diamondstudiomanicura.com</span>
+						</a>
+					</li>
+					<li><span class="icon icon-alarm"></span><span class="text">Du lundi au samedi de 09h30 à 20h30</span></li>
+	              </ul>
+				 
+	            </div>
+
+				<div class="social-icons">
+					<a href="https://www.facebook.com/profile.php?id=61555592049214" target="_blank">
+						<i class="bi bi-facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/diamond_studio_and?igsh=d3pkNWNvejl4Znhs&utm_source=webds" target="_blank">
+						<i class="bi bi-instagram"></i>
+					</a>
+				</div>s
+
+            </div>
+          </div>
+		  <div class="col-md-4">
+            <div>
+				<div class="embed-responsive embed-responsive-1by1">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.2452349890414!2d1.5213378763474181!3d42.50759622576739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a58ad397796b05%3A0x58dd3f666fd3d9db!2sDiamond%20Studio%20By%20In%C3%AAs%20Pinto!5e0!3m2!1ses-419!2sad!4v1723484290734!5m2!1ses-419!2sad" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+          </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+  <!-- <script src="js/aos.js"></script> -->
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <!-- <script src="js/bootstrap-datepicker.js"></script> -->
+  <!-- <script src="js/jquery.timepicker.min.js"></script> -->
+  <script src="js/scrollax.min.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+  <!-- <script src="js/google-map.js"></script> -->
+  <script src="js/main.js"></script>
+  
+
+  <!-- SCRIPT WIDGET WHATSAPP -->
+  <script>
+    window._2chatConfig = {
+    phoneNumber: '+376687310',
+    accountName: `Bienvenue chez Diamond Studio!`,
+    statusMessage: `Nous répondons généralement en moins d’une heure`,
+    chatMessage: `Bonjour! 👋
+Comment pouvons-nous vous aider?`,
+    placeholder: 'Écrivez votre message ici...',
+    position: 'right',
+    colorScheme: 'automatic',
+    showNotification: false,
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://widgets.2chat.io/index.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', '_2chat'));
+</script>
+  </body>
+</html>
